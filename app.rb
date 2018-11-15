@@ -18,7 +18,7 @@ module FormsLab
 
       params[:pirate][:ships].each {|hash| ship = Ship.new(hash)}
       @ships = Ship.all
-      raise @pirate.inspect
+      # raise @pirate.inspect
 
       erb 'pirates/show'.to_sym
     end
